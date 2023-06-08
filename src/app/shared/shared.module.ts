@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -9,11 +10,13 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    GoogleMapsModule
   ],
   exports : [
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    GoogleMapsModule
   ]
 })
 export class SharedModule { }

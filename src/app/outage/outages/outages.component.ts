@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class OutagesComponent {
 
+  options: google.maps.MapOptions = {
+    center: {lat: 40, lng: -20},
+    zoom: 4,
+    fullscreenControl: true,    
+  };
+
+  centerChange(e : Event) {
+    console.log(e);
+  }
+
+
+
 }
